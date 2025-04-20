@@ -1,0 +1,118 @@
+#COLUMNS LISTS FOR QUALITY CHECKS
+listing:
+  important_columns:
+    - date
+    - task_id
+    - listing_link
+    - type
+    - page
+    - position
+    - is_sponsored
+    - product_link
+    - data_type
+    - market
+    - e_retailer
+    - sku
+    - title
+    - category
+    - project
+    - brand
+  no_na_columns:
+    - market
+    - e_retailer
+    - category
+    - sku
+    - product_link
+    - listing_link
+    - brand
+  no_duplicate_columns:
+    - product_link
+independent_products:
+  important_columns_with_content:
+    - date
+    - task_id
+    - product_link
+    - data_type
+    - market
+    - e_retailer
+    - sku
+    - title
+    - project
+    - brand
+  important_columns_without_content:
+    - date
+    - task_id
+    - product_link
+    - data_type
+    - market
+    - e_retailer
+    - sku
+    - project
+    - brand
+  no_na_columns:
+    - market
+    - e_retailer
+    - sku
+    - product_link
+  no_duplicate_columns:
+    - product_link
+
+
+  #DATA TYPES COLUMNS LISTS FOR ELIMINATING MIGRATING COLUMNS
+
+
+Listings:
+Content:
+  null_check_default_list:
+    - title
+    - bullet_points
+    - description
+Reviews:
+  columns_to_be_checked:
+    - market
+    - e_retailer
+    - category
+    - review_title
+    - review_date
+    - content
+    - user_name
+    - page
+    - product_link
+    - review_id
+    - review_rating
+    - brand
+  null_check_default_list:
+    - review_title
+    - review_rating
+    - content
+    - review_id
+    - review_date
+    - user_name
+    - brand
+    
+Q&A:
+  columns_to_be_checked:
+    - market
+    - e_retailer
+    - category
+    - page
+    - questions
+    - answers
+    - qa_date
+    - qa_id
+    - votes
+    - user_name
+  null_check_default_list:
+    - questions
+    - answers
+    - qa_date
+    - qa_id
+    - votes
+
+#THRESHOLDS FOR NULL ALERTS
+
+null_alert:
+  1_st_level:
+    - 10
+  2_nd_level:
+    - 20
