@@ -1,2 +1,2 @@
-# Data Quality App
-Repository with the scrapping data quality control tool
+# ddc-data-quality-app
+Repository with application to check data quality ensurance.
